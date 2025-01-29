@@ -1,0 +1,21 @@
+.container-fluid {
+    background-color: #727276;
+    color: white;
+}
+
+h5 {
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    color: white !important;
+}
+
+h1,p {
+    text-align: center !important;
+}
+
+.col-2 {
+    margin: 3%;
+}
