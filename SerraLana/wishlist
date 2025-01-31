@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serralana - Wishlist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 250px; /* Altezza fissa per uniformare le immagini */
+            object-fit: cover; /* Taglia le immagini per adattarle senza distorsioni */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Serralana</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Il mio Profilo</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Wishlist</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ordini</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Registrazione/Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Assistenza</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Wishlist -->
+<div class="container mt-5">
+    <h2 class="mb-4">La tua Wishlist ❤️</h2>
+    
+    <div class="row">
+        <!-- Lista di 10 prodotti -->
+        <script>
+            const prodotti = [
+                { nome: "TI PREGO PUSHA", prezzo: "€59,99", img: "https://static2.goldengoose.com/public/Style/ECOMM/GWP00952.P000665-90100-9.jpg" },
+                { nome: "Giacca di Pelle", prezzo: "€149,99", img: "https://cdn-images.farfetch-contents.com/18/28/41/55/18284155_39164823_1000.jpg" },
+                { nome: "Pantaloni Eleganti", prezzo: "€79,99", img: "https://cdn-images.farfetch-contents.com/19/15/50/49/19155049_42771292_1000.jpg" },
+                { nome: "Scarpe da Ginnastica", prezzo: "€129,99", img: "https://cdn-images.farfetch-contents.com/17/89/20/60/17892060_40094239_1000.jpg" },
+                { nome: "Cappotto Lungo", prezzo: "€199,99", img: "https://cdn-images.farfetch-contents.com/18/35/24/69/18352469_39363322_1000.jpg" },
+                { nome: "Felpa con Cappuccio", prezzo: "€89,99", img: "https://cdn-images.farfetch-contents.com/17/86/58/32/17865832_39259264_1000.jpg" },
+                { nome: "Zaino in Pelle", prezzo: "€109,99", img: "https://cdn-images.farfetch-contents.com/17/95/67/81/17956781_40030863_1000.jpg" },
+                { nome: "Jeans Slim Fit", prezzo: "€69,99", img: "https://cdn-images.farfetch-contents.com/17/78/61/36/17786136_39284458_1000.jpg" },
+                { nome: "T-Shirt Oversize", prezzo: "€39,99", img: "https://cdn-images.farfetch-contents.com/17/98/30/20/17983020_39462319_1000.jpg" },
+                { nome: "Occhiali da Sole", prezzo: "€89,99", img: "https://cdn-images.farfetch-contents.com/18/35/11/92/18351192_39142124_1000.jpg" }
+            ];
+
+            document.write(prodotti.map(prod => `
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="${prod.img}" class="card-img-top" alt="${prod.nome}">
+                        <div class="card-body">
+                            <h5 class="card-title">${prod.nome}</h5>
+                            <p class="card-text">${prod.prezzo}</p>
+                            <button class="btn btn-primary w-100 mb-2">Aggiungi al Carrello</button>
+                            <button class="btn btn-outline-danger w-100">Rimuovi</button>
+                        </div>
+                    </div>
+                </div>
+            `).join(''));
+        </script>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
