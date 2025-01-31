@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Header e footer</title>
@@ -11,15 +10,38 @@
 
     <style>
         @import url(headerFooter.css);
+        
     </style>
 </head>
 <body>
+
+  <!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="container">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search"> 
+      <button class="btn btn-outline-dark" type="submit">CERCA</button>
+    </form> <br>
+    <a class="navbar-brand" href="home.html">SERRALANA</a>
+        <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#">
+                <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
+              </a></li> 
+              <li class="nav-item"><a href="#">
+                <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
+              </a></li>
+          </ul>
+      </div>
+  </div>
+</nav> 
+
+  <!-- FOOTER -->
 
 
     <div class="container-fluid">
         <footer class="py-5">
           <div class="row">
-            <div class="col-2">
+            <div class="col-3">
               <h5>SUPPORTO</h5>
               <div class="nav flex-column">
                 <a href="contatti.html">Contatti</a>
@@ -29,14 +51,15 @@
               </div>
             </div> 
 
-        <div class="col-2">
+        <div class="col-6">
               <h5>AZIENDA</h5>
               <div class="nav flex-column">
-              <a href="chisiamo.html">Chi siamo</a></li>
+              <a href="chisiamo.html">Chi siamo</a>
               </div>
             </div>
+
       
-          <div class="col-4 offset-1">
+          <div class="col-3">
                 <h5>SEGUICI</h5>
                 <div class="d-flex w-100 gap-2">
                   <a href="#">
@@ -51,15 +74,13 @@
                 </div>
                 <br> <br>
 
-                <h5> METODI DI PAGMENTO</h5>
+                <h5> METODI DI PAGAMENTO</h5>
                 <img src="/SerraLana/img/payment.png" alt="payment" style="width:300px;">
-
             </div>
-          <div class="py-4 my-4 border-top">
-            <div id="logo"> 
+
             <h1>SERRALANA</h1>
             <p>© Copyright</p>
-          </div>
+
         </footer>
       </div>
     

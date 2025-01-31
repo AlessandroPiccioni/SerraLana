@@ -1,6 +1,14 @@
+
+img, a {
+    max-width: 100%;
+    height: auto;
+  }
+
+
 .container-fluid {
     background-color: #727276;
     color: white;
+    margin: 0% !important;
 }
 
 h5 {
@@ -18,4 +26,16 @@ h1,p {
 
 .col-2 {
     margin: 3%;
+}
+
+
+.navbar-brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: black !important;
 }
