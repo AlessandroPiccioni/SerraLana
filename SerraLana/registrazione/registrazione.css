@@ -50,6 +50,14 @@ h1#scritta-footer, p#scritta-footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+div#NB {
+    display: flex;
+    
+}
+button#NB2 {
+    margin-left: 5px;
+}
+
 #scritta-footer {
     color: white !important;
 
