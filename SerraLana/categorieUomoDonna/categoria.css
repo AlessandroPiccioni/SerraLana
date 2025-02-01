@@ -1,3 +1,4 @@
+
 #img-footer{
     max-width: 100%;
     height: auto;
@@ -63,36 +64,71 @@ h1#scritta-footer, p#scritta-footer {
     margin: 15px;
 }
 
-
-
-div#background {
+div#categoria {
+    background-image: url("/SerraLana/img/categoriasfondo1.jpg");
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     height: 100vh;
+    background-size: cover; 
+    background-position: center; 
     font-family: Arial, sans-serif;
 }
 
-.left, .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3em;
-    font-weight: bold;
-}
-.left {
-    background-image: url("/SerraLana/img/home1.jpg");
+div#categoria2 {
+    background-image: url("/SerraLana/img/categoriasfondo2.jpg");
+    margin: 0;
+    height: 100vh;
     background-size: cover; 
     background-position: center; 
-}
-.right {
-    background-image: url("/SerraLana/img/home2.jpg");
-    background-size: cover; 
-    background-position: center; 
+    font-family: Arial, sans-serif;
 }
 
-.categoria {
-    color: rgba(0, 0, 0, 0); 
+div#testoC{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+    padding: 100px;
+
+}
+
+
+.categoriaC {
+    color: rgba(255, 255, 255, 0); 
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     text-decoration: none;
+
+}
+
+.categoriaC2 {
+    color: rgba(255, 255, 255, 0); 
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+
+}
+
+.container-fluid#banner {
+    height: auto;
+    background-color: #dd7437;
+    font-family: Arial, sans-serif;
+
+}
+
+#testoBanner {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+#testoBanner2 {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }

@@ -1,3 +1,4 @@
+
 #img-footer{
     max-width: 100%;
     height: auto;
@@ -64,35 +65,3 @@ h1#scritta-footer, p#scritta-footer {
 }
 
 
-
-div#background {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-}
-
-.left, .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3em;
-    font-weight: bold;
-}
-.left {
-    background-image: url("/SerraLana/img/home1.jpg");
-    background-size: cover; 
-    background-position: center; 
-}
-.right {
-    background-image: url("/SerraLana/img/home2.jpg");
-    background-size: cover; 
-    background-position: center; 
-}
-
-.categoria {
-    color: rgba(0, 0, 0, 0); 
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-}

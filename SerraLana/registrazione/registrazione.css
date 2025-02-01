@@ -61,6 +61,10 @@ h1#scritta-footer, p#scritta-footer {
 }
 
 
+.nav-item {
+    margin: 15px;
+}
+
 
 .row {
     margin: 5%;
