@@ -44,7 +44,7 @@
         <!-- Lista di 10 prodotti -->
         <script>
             const prodotti = [
-                { nome: "TI PREGO PUSHA", prezzo: "€59,99", img: "https://static2.goldengoose.com/public/Style/ECOMM/GWP00952.P000665-90100-9.jpg" },
+                { nome: "Maglione di Lana", prezzo: "€59,99", img: "https://static2.goldengoose.com/public/Style/ECOMM/GWP00952.P000665-90100-9.jpg" },
                 { nome: "Giacca di Pelle", prezzo: "€149,99", img: "https://cdn-images.farfetch-contents.com/18/28/41/55/18284155_39164823_1000.jpg" },
                 { nome: "Pantaloni Eleganti", prezzo: "€79,99", img: "https://cdn-images.farfetch-contents.com/19/15/50/49/19155049_42771292_1000.jpg" },
                 { nome: "Scarpe da Ginnastica", prezzo: "€129,99", img: "https://cdn-images.farfetch-contents.com/17/89/20/60/17892060_40094239_1000.jpg" },
