@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url(profilo.css);
+        
+    </style>
+</head>
+<body>
+
+    <!-- HEADER TRASPARENTE, ANCHE IL CAMPO DI RICERCA -->
+   
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <form class="form-inline">
+        <div id="NB">
+        <input class="form-control" type="search"> 
+        <button id="NB2" class="btn btn-btn btn-dark" type="submit">CERCA</button>
+      </div>
+      </form> 
+      <br>
+      <a class="navbar-brand" href="/SerraLana/home/home.html">SERRALANA</a>
+          <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/SerraLana/profilo/profilo2.html">
+                  <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
+                </a></li> 
+                <li class="nav-item"><a href="#">
+                  <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+  </nav> 
+ 
+
+
+  <div class="centroOrizontalmenteBasso backgroundHeader">
+    <div id="benvenuto">
+      <h1 id="benvenuto2"> BENVENUTO </h1>
+    </div>
+</div>
+
+<!--Credenziali di accesso-->
+<div class="backgroundCredenziali" >
+
+  <div style="padding: 10%; border-radius: 10px; ">
+    <div>
+        <div style="margin-top:-5%; margin-bottom: -2%;">
+            <h3 id="credenziali">CREDENZIALI DI ACCESSO </h3>
+            <h4>Le tue credenziali sono sacre. <br> Non condividerle con nessuno, nemmeno con il tuo migliore amico.</h4>
+        </div>
+        <div>
+            <div class="container mt-5">
+                <div class="card">
+                  <div class="card-header bg-secondary text-muted">
+                    <h3 id="informazioni">Le tue informazioni</h3>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Dati di Accesso</h5>
+                    <form>
+                      <div class="mb-3 position-relative">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <div class="centroVerticalmente" style="margin-right: 1%;">
+                                <i class="fas fa-envelope" style="font-size: 18px;"></i>
+                            </div>
+                          <input type="email" class="form-control" id="email" value="mario.rossi@email.com">
+                        </div>
+                      </div>
+                      <div class="mb-3 position-relative">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group">
+                            <div class="centroVerticalmente" style="margin-right: 1%;">
+                                <i class="fas fa-user" style="font-size: 18px;"></i>
+                            </div>
+                          <input type="text" class="form-control" id="username" value="mariorossi">
+                        </div>
+                      </div>
+                      <div class="mb-3 position-relative">
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group">
+                            <div class="centroVerticalmente" style="margin-right: 1%;">
+                                <i class="fas fa-lock" style="font-size: 18px;"></i>
+                            </div>
+                          <input type="password" class="form-control" id="password" value="********">
+                          <i class="fas fa-eye position-absolute" id="togglePassword" style="right: 10px; top: 35px; cursor: pointer;"></i>
+                        </div>
+                      </div>
+                    </form>
+                    <h5 class="card-title mt-4">Dati Personali</h5>
+                    <form>
+                      <div class="mb-3 position-relative">
+                        <label for="nome" class="form-label">Nome</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                          </div>
+                          <input type="text" class="form-control" id="nome" value="Mario">
+                        </div>
+                      </div>
+                      <div class="mb-3 position-relative">
+                        <label for="cognome" class="form-label">Cognome</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="cognome" value="Rossi">
+                        </div>
+                      </div>
+                      <div class="mb-3 position-relative">
+                        <label for="indirizzo" class="form-label">Indirizzo</label>
+                        <div class="input-group">
+                            <div class="centroVerticalmente" style="margin-right: 1%;">
+                                <i class="fas fa-home" style="font-size: 18px;"></i>
+                            </div>
+                          <input type="text" class="form-control" id="indirizzo" value="Via Roma 10, Milano">
+                        </div>
+                      </div>
+                      <div class="mb-3 position-relative">
+                        <label for="dataNascita" class="form-label">Data di Nascita</label>
+                        <div class="input-group">
+                          <div class="centroVerticalmente" style="margin-right: 1%;">
+                            <i class="fas fa-calendar-alt" style="font-size: 18px;"></i>
+                          </div>
+                          <input type="date" class="form-control" id="dataNascita" value="2025-01-25">
+                        </div>
+                      </div>
+                    </form>                
+                    <h5 class="card-title mt-4">Dati di Pagamento</h5>
+                    <form>
+                      <div class="mb-3 position-relative">
+                        <label for="metodoPagamento" class="form-label">Metodo di pagamento</label>
+                        <div class="input-group">
+                            <div class="centroVerticalmente" style="margin-right: 1%;">
+                                <i class="fas fa-credit-card" style="font-size: 18px;"></i>
+                            </div>
+                          <input type="text" class="form-control" id="metodoPagamento" value="Carta di credito">
+                        </div>
+                      </div>
+                    </form>
+                    <div class="destra">
+                      <button type="button" class="btn btn-dark">SALVA</button>
+                      <button type="button" class="btn btn-dark">ELIMINA ACCOUNT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+   <!-- FOOTER -->
+
+   <div class="container-fluid-footer">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-3">
+          <h5  id="scritta-footer">SUPPORTO</h5>
+          <div class="nav flex-column">
+            <a href="contatti.html" id="scritta-footer">Contatti</a>
+            <a href="condizioni.html" id="scritta-footer">Termini e condizioni</a>
+            <a href="FAQ.html" id="scritta-footer">FAQs</a>
+          </div>
+        </div> 
+
+    <div class="col-6">
+          <h5  id="scritta-footer">AZIENDA</h5>
+          <div class="nav flex-column">
+            <a id="scritta-footer">Sede legale: Via Roma 123, 00100, Roma, Italia </a>
+            <a id="scritta-footer">Partita IVA: IT12345678901 </a>   
+            <a id="scritta-footer">Ragione sociale: SERRALANA S.R.L </a>
+            <a id="scritta-footer">Codice Fiscale: 12345678901 </a>           
+          
+          </div>
+        </div>
+
+  
+      <div class="col-3">
+            <h5  id="scritta-footer">SEGUICI</h5>
+            <div class="img-social">
+              <a href="#" id="footer">
+                <img src="/SerraLana/img/fb.png" alt="fb" style="width:42px;height:42px;"  id="img-footer">
+              </a>
+              <a href="#" id="footer">
+                <img src="/SerraLana/img/x.png" alt="x." style="width:42px;height:42px;"  id="img-footer">
+              </a>
+              <a href="#" id="footer">
+                <img src="/SerraLana/img/instagram.png" alt="ig" style="width:42px;height:42px;"  id="img-footer">
+              </a>
+            </div>
+            <br> <br>
+
+            <h5  id="scritta-footer"> METODI DI PAGAMENTO</h5>
+            <img src="/SerraLana/img/payment.png" alt="payment" style="width:300px;" id="img-footer">
+        </div>
+
+        <h1  id="scritta-footer">SERRALANA</h1>
+        <p  id="scritta-footer">© 2025 SERRALANA. Tutti i diritti riservati.</p>
+
+        </div>
+    </footer>
+  </div>
+      
+    
+</body>
+</html>
