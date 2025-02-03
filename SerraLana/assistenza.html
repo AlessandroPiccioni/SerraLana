@@ -1,0 +1,153 @@
+<html>
+    <head>
+         <!-- link-->
+         <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <!-- Quicksand-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <!--assistenza CSS-->
+        <link href="assistenza.css" rel="stylesheet">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body class="assistenza">
+        <!-- titolo -->
+        <div class="centroOrrizontalmenteBasso backgroundHeader">
+            <div>
+              <h2>Benvenuto Alessandro </h2>
+            </div>
+        </div>
+
+        <!--Contattaci subito-->
+        <div class="sinistra" style="height: 20%;">
+            <div>
+                <h3>Notifiche Account</h3>
+                <p>Rimani aggiornato su tutto!</p>
+                <button type="button" class="btn btn-dark">INIZIA SUBITO</button>
+            </div>
+        </div>
+
+        <br>
+
+        <!--Credenziali di accesso-->
+        <div class="backgroundCredenziali" >
+
+          <div style="padding: 10%; background-color: rgba(21, 202, 211, 0.498); border-radius: 10px; ">
+            <div>
+                <div style="margin-top:-5%; margin-bottom: -2%;">
+                    <h3>CREDENZIALI DI ACCESSO </h3>
+                    <h4>Le tue credenziali sono sacre! Non condividerle con nessuno, nemmeno con il tuo migliore amico.</h4>
+                </div>
+                <div>
+                    <div class="container mt-5">
+                        <div class="card">
+                          <div class="card-header bg-secondary text-muted">
+                            <h3>Le tue informazioni</h3>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Dati di Accesso</h5>
+                            <form>
+                              <div class="mb-3 position-relative">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <div class="centroVerticalmente" style="margin-right: 1%;">
+                                        <i class="fas fa-envelope" style="font-size: 18px;"></i>
+                                    </div>
+                                  <input type="email" class="form-control" id="email" value="mario.rossi@email.com">
+                                </div>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group">
+                                    <div class="centroVerticalmente" style="margin-right: 1%;">
+                                        <i class="fas fa-user" style="font-size: 18px;"></i>
+                                    </div>
+                                  <input type="text" class="form-control" id="username" value="mariorossi">
+                                </div>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <div class="centroVerticalmente" style="margin-right: 1%;">
+                                        <i class="fas fa-lock" style="font-size: 18px;"></i>
+                                    </div>
+                                  <input type="password" class="form-control" id="password" value="********">
+                                  <i class="fas fa-eye position-absolute" id="togglePassword" style="right: 10px; top: 35px; cursor: pointer;"></i>
+                                </div>
+                              </div>
+                            </form>
+                            <h5 class="card-title mt-4">Dati Personali</h5>
+                            <form>
+                              <div class="mb-3 position-relative">
+                                <label for="nome" class="form-label">Nome</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                  </div>
+                                  <input type="text" class="form-control" id="nome" value="Mario">
+                                </div>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                <label for="cognome" class="form-label">Cognome</label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="cognome" value="Rossi">
+                                </div>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                <label for="indirizzo" class="form-label">Indirizzo</label>
+                                <div class="input-group">
+                                    <div class="centroVerticalmente" style="margin-right: 1%;">
+                                        <i class="fas fa-home" style="font-size: 18px;"></i>
+                                    </div>
+                                  <input type="text" class="form-control" id="indirizzo" value="Via Roma 10, Milano">
+                                </div>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                <label for="dataNascita" class="form-label">Data di Nascita</label>
+                                <div class="input-group">
+                                  <div class="centroVerticalmente" style="margin-right: 1%;">
+                                    <i class="fas fa-calendar-alt" style="font-size: 18px;"></i>
+                                  </div>
+                                  <input type="date" class="form-control" id="dataNascita" value="2025-01-25">
+                                </div>
+                              </div>
+                            </form>                
+                            <h5 class="card-title mt-4">Dati di Pagamento</h5>
+                            <form>
+                              <div class="mb-3 position-relative">
+                                <label for="metodoPagamento" class="form-label">Metodo di pagamento</label>
+                                <div class="input-group">
+                                    <div class="centroVerticalmente" style="margin-right: 1%;">
+                                        <i class="fas fa-credit-card" style="font-size: 18px;"></i>
+                                    </div>
+                                  <input type="text" class="form-control" id="metodoPagamento" value="Carta di credito">
+                                </div>
+                              </div>
+                              <div class="mb-3 position-relative">
+                                <label for="importo" class="form-label">Importo</label>
+                                <div class="input-group">
+                                  <div class="centroVerticalmente" style="margin-right: 1%;">
+                                    <i class="fas fa-dollar-sign" style="font-size: 18px;"></i>
+                                    </div>
+                                  <input type="text" class="form-control" id="importo" value="100">
+                                </div>
+                              </div>
+                            </form>
+                            <div class="destra">
+                              <button type="button" class="btn btn-dark">Salva modifiche</button>
+                              <button type="button" class="btn btn-dark">Elimina account</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
