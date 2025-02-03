@@ -1,106 +1,173 @@
 <html>
     <head>
-         <!-- link-->
-         <!-- Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <!-- Quicksand-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <!--assistenza CSS-->
         <link href="assistenza.css" rel="stylesheet">
-        <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        
     </head>
-    <body class="white">
-        <!-- titolo -->
-        <div class="jumbotron jumbotron-fluid" style="padding-top: 20px; padding-bottom: 20px; background-color: #f8f9fa; margin-top: 5%; margin-left: 15%; margin-right: 15%;">
-          <div class="container backgroundFAQ" style=" border-radius: 1%;">
-            <div class="centroDue" style="display: flex; justify-content: space-between; align-items: center; height:3%">
-              <div class="sinistra" style="padding-right: 10px;">
-                <div class="centroVerticalmente" style="display: flex; position: relative; flex-direction: column;">
-                  <h4 class="display-4">Hai Domande? Rispondiamo!</h4>
-                  <p class="lead">Scopri le risposte alle domande più comuni e contattaci per qualsiasi dubbio.</p>
-                </div>
-              </div>
-                <div class="destra">
-                <img class="background-color" src="img/faq.svg" alt="Mia Immagine">
-              </div>
+    <body class="faq">
+
+      <!-- Banner-->
+        <div class="container mt-5" style="background-color: #Fffff0; padding-left: 3%; margin-bottom: 3%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+          <div class="jumbotron d-flex align-items-center justify-content-between">
+            <div class="text-container">
+              <h1 class="display-4">Hai Domande? Rispondiamo!</h1>
+              <h2 class="lead" style="font-size: 180%;">Scopri le risposte alle domande più comuni e contattaci per qualsiasi dubbio.</h2>
+            </div>
+            <div class="d-none d-md-block">
+              <img class="img-fluid" src="img/faq.svg" alt="Mia Immagine">
             </div>
           </div>
         </div>
 
-        <!-- FAQs -->
-        <div class="mb-8" style="padding-top: 20px; padding-bottom: 20px; background-color: #ffb26e; margin-top: 5%; margin-left: 20%; margin-right: 20%; ">
+        <!-- FAQ-->
+        <div class="container" style="margin-bottom: 5%;">
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <h2 class="mb-4">Domande Frequenti</h2>
+                  <div class="accordion" id="faqAccordion">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                      Qual è la vostra politica di restituzione?
+                                  </button>
+                          </h2>
+                          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  Offriamo una politica di restituzione di 30 giorni per tutti gli articoli inutilizzati nella loro confezione originale.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                      Quanto tempo ci vuole per la spedizione?
+                                  </button>
+                          </h2>
+                          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  La spedizione di solito richiede dai 3 ai 5 giorni lavorativi per gli ordini nazionali e dai 7 ai 14 giorni per gli ordini internazionali.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                      Offrite spedizione internazionale?
+                                  </button>
+                          </h2>
+                          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  Sì, spediamo nella maggior parte dei paesi del mondo. I costi di spedizione e i tempi di consegna possono variare a seconda della destinazione.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                      Come posso tracciare il mio ordine?
+                                  </button>
+                          </h2>
+                          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  Una volta che il tuo ordine è stato spedito, riceverai un numero di tracciamento via email. Puoi utilizzare questo numero per tracciare il tuo pacco sul nostro sito web o su quello del corriere.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- hr-->
+      <div class="mb-4">
+        <hr class="dotted">
+      </div>
+
+      <!-- Contact me-->
+      <div class="contact3 py-5" style=" margin-left: 3%; margin-right: 3%;">
+        <div class="row no-gutters">
           <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-11 col-xl-10">
-                <div class="d-flex align-items-end mb-5">
-                  <i class="bi bi-person-gear me-3 lh-1 display-5"></i>
-                  <h3 class="m-0">Your Account</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-shadow">
+                  <img src="img/tiziaMAC.jpg" class="img-fluid">
                 </div>
               </div>
-              <div class="col-11 col-xl-10">
-                <div class="accordion accordion-flush" id="faqAccount">
-                  <div class="accordion-item bg-transparent border-top border-bottom py-3">
-                    <h2 class="accordion-header" id="faqAccountHeading1">
-                      <button class="accordion-button collapsed bg-transparent fw-bold shadow-none text" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1" aria-expanded="false" aria-controls="faqAccountCollapse1">
-                        What is an account?
-                      </button>
-                    </h2>
-                    <div id="faqAccountCollapse1" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading1">
-                      <div class="accordion-body">
-                        <p>An account is a personal or organizational record that allows you to access and manage various services, often requiring authentication through a username and password.</p>
+              <div class="col-lg-6">
+                <div class="contact-box ml-3">
+                  <h1 class="font-weight-light mt-2">Contatto Rapido</h1>
+                  <form class="mt-4">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <input class="form-control" type="text" placeholder="Nome">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <input class="form-control" type="email" placeholder="Indirizzo email">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <input class="form-control" type="text" placeholder="Telefono">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <textarea class="form-control" rows="3" placeholder="Messaggio"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"><span> INVIA</span></button>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item bg-transparent border-bottom py-3">
-                    <h2 class="accordion-header" id="faqAccountHeading2">
-                      <button class="accordion-button collapsed bg-transparent fw-bold shadow-none text" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2" aria-expanded="false" aria-controls="faqAccountCollapse2">
-                        How do I create an account?
-                      </button>
-                    </h2>
-                    <div id="faqAccountCollapse2" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading2">
-                      <div class="accordion-body">
-                        <p>To create an account, visit the website or application and look for a "Sign Up" or "Create Account" button. Follow the instructions to enter your information and create a username and password.</p>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="card mt-4 border-0 mb-4">
+                  <div class="row" style="margin-left:3%;">
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card-body d-flex align-items-center c-detail pl-0">
+                        <div class="mr-3 align-self-center">
+                          <img class="size" src="img/icon1.png">
+                        </div>
+                        <div class="">
+                          <h6 class="font-weight-medium">Indirizzo</h6>
+                          <p class="">601 Sherwood Ave.
+                            <br> San Bernardino</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item bg-transparent border-bottom py-3">
-                    <h2 class="accordion-header" id="faqAccountHeading3">
-                      <button class="accordion-button collapsed bg-transparent fw-bold shadow-none white text" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3" aria-expanded="false" aria-controls="faqAccountCollapse3">
-                        How do I secure my account?
-                      </button>
-                    </h2>
-                    <div id="faqAccountCollapse3" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading3">
-                      <div class="accordion-body">
-                        <p>To secure your account, use a robust and unique password, enable two-factor authentication if available, and be cautious about sharing your login information. Regularly update your password and avoid using easily guessable information like birthdays or names.</p>
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card-body d-flex align-items-center c-detail">
+                        <div class="mr-3 align-self-center">
+                          <img class="size" src="img/icon2.png">
+                        </div>
+                        <div class="">
+                          <h6 class="font-weight-medium">Telefono</h6>
+                          <p class="">251 546 9442
+                            <br> 630 446 8851</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item bg-transparent border-bottom py-3">
-                    <h2 class="accordion-header" id="faqAccountHeading4">
-                      <button class="accordion-button collapsed bg-transparent fw-bold shadow-none text" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse4" aria-expanded="false" aria-controls="faqAccountCollapse4">
-                        What should I do if I forget my password?
-                      </button>
-                    </h2>
-                    <div id="faqAccountCollapse4" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading4">
-                      <div class="accordion-body">
-                        <p>If you forget your password, most websites and services offer a "Forgot Password" or "Reset Password" option. Follow the steps to reset your password, often involving an email or SMS verification.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item bg-transparent border-bottom py-3">
-                    <h2 class="accordion-header" id="faqAccountHeading5">
-                      <button class="accordion-button collapsed bg-transparent fw-bold shadow-none text" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse5" aria-expanded="false" aria-controls="faqAccountCollapse5">
-                        What should I do if my account is compromised or hacked?
-                      </button>
-                    </h2>
-                    <div id="faqAccountCollapse5" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading5">
-                      <div class="accordion-body">
-                        <p>If you suspect your account has been compromised, change your password immediately. Contact the service provider for further assistance, and consider enabling two-factor authentication for added security.</p>
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card-body d-flex align-items-center c-detail">
+                        <div class="mr-3 align-self-center">
+                          <img class="size" src="img/icon3.png">
+                        </div>
+                        <div class="">
+                          <h6 class="font-weight-medium">Email</h6>
+                          <p class="">
+                            info@wrappixel.com
+                            <br> 123@wrappixel.com
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -109,55 +176,6 @@
             </div>
           </div>
         </div>
-
-        <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
-          <div class="row w-100">
-            
-            <!-- Colonna sinistra con immagine -->
-            <div class="col-md-6 d-flex justify-content-center" style="margin-left: -5%;">
-              <img src="img/icon-animation_1.gif" alt="Mia Immagine" class="img-fluid"/>
-            </div>
-            
-            <!-- Colonna destra con modulo -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #ffb26e; ">
-              <div class="text-center" style="padding-top: 5%;">
-                <h3>Contattaci Subito</h3>
-                <p>Hai bisogno di aiuto? Compila il modulo qui sotto!</p>
-                
-                <form style="width: 100%; max-width: 26rem;">
-                  <!-- Nome -->
-                  <div class="mb-4">
-                    <input type="text" id="form4Example1" class="form-control" />
-                    <label class="form-label" for="form4Example1">Name</label>
-                  </div>
-                  
-                  <!-- Email -->
-                  <div class="mb-4">
-                    <input type="email" id="form4Example2" class="form-control" />
-                    <label class="form-label" for="form4Example2">Email address</label>
-                  </div>
-                  
-                  <!-- Messaggio -->
-                  <div class="mb-4">
-                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                    <label class="form-label" for="form4Example3">Message</label>
-                  </div>
-                  
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-                    <label class="form-check-label" for="form4Example4">
-                      Send me a copy of this message
-                    </label>
-                  </div>
-                  
-                  <!-- Bottone invio -->
-                  <button type="button" class="btn btn-primary btn-block mb-4">Send</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+      </div>
     </body>
 </html>
