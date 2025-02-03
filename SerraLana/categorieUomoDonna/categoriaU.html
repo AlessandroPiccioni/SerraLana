@@ -10,6 +10,7 @@
     <style>
         @import url("categoria.css");
     </style>
+    <script src="scriptcategoriaU.js" defer></script>  <!-- scripr src ... per richiamare il js -->
 
 
 </head>
@@ -41,7 +42,9 @@
   
   <div id="categoria2">
     <div id="testoC">
-        <a class="categoriaC2" href="#">NUOVA COLLEZIONE</a> <br>
+      <!-- abbiamo aggiunto la funzione onlclick  in modo da richiamare il js-->
+
+      <a class="categoriaC" href="#" onclick="nuovaCollezioneClicked()">NUOVA COLLEZIONE</a> <br>
     </div>
     </div>
 
@@ -50,6 +53,13 @@
         <div id="testoBanner2">Su articoli selezionati</div>
     </div>
 
+    <!-- abbiamo aggiunto il br per inserire un minimo di spazio e ho inserito con un div cntainer 
+     che è dove saranno mostrati i prodotti restituiti dall'api -->
+  </br>
+  <div class="container" id="prodotti">
+  
+    
+  </div>
 
     <!-- FOOTER -->
   
