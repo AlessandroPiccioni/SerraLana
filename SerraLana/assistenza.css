@@ -1,0 +1,101 @@
+
+body.assistenza{
+    background-color: #727276 !important;
+}
+
+body.faq{
+  background-color: white !important;
+}
+
+h1, h2, h3, h4, p {
+    color: white !important;
+    text-shadow: 
+        1px 1px 0 #000,   
+        -1px -1px 0 #000, 
+        1px -1px 0 #000,  
+        -1px 1px 0 #000;   
+}
+
+.text{
+  color: white !important;
+  text-shadow: 
+      1px 1px 0 #000,   
+      -1px -1px 0 #000, 
+      1px -1px 0 #000,  
+      -1px 1px 0 #000;   
+}
+
+.centroOrrizontalmenteBasso {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+.centroVerticalmente {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.centroOrrizontalmente {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end;
+}
+
+.backgroundFAQ{
+  background-color: #ffb26e !important;
+}
+
+  .backgroundHeader{
+    background-image: url('img/armadio.png') !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 30%;
+  }
+
+  .sinistra {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    margin-left: 0.9%;
+  }
+
+  .destra {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 0.9%;
+    gap: 1%;
+  }
+
+.backgroundCredenziali{
+  background-image: url('img/armadio.png') !important;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.backgroundForm{
+  background-color: red !important;
+}
+
+.centroDue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%; 
+}
+
+.centroDiagonale{
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  gap: -80px;              
+  border-radius: 5%;
+}
+
+
+
