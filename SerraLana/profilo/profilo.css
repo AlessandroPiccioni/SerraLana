@@ -1,0 +1,180 @@
+h2, #informazioni, p {
+    color: white !important;
+    text-shadow: 
+        1px 1px 0 #000,   
+        -1px -1px 0 #000, 
+        1px -1px 0 #000,  
+        -1px 1px 0 #000;   
+}
+
+h1#benvenuto2 {
+  color: rgb(0, 0, 0) !important;
+  text-shadow: 
+      1px 1px 0 #ffffff,   
+      -1px -1px 0 #ffffff, 
+      1px -1px 0 #ffffff,  
+      -1px 1px 0 #ffffff; 
+  padding-top: 195px; 
+  font-size: 40px;
+}
+
+div#benvenuto {
+
+  height: 15em;
+  text-align: center !important;
+
+}
+
+h3#credenziali, h4 {
+    font-weight: bold !important; 
+}
+
+.text{
+  color: white !important;
+  text-shadow: 
+      1px 1px 0 #000,   
+      -1px -1px 0 #000, 
+      1px -1px 0 #000,  
+      -1px 1px 0 #000;   
+}
+
+.centroOrrizontalmenteBasso {
+  
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important;
+}
+
+.centroVerticalmente {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.centroOrizontalmente {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end;
+}
+
+  .backgroundHeader{
+    background-image: url("/SerraLana/img/armadio.png") !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+
+  .sinistra {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    margin-left: 0.9%;
+  }
+
+  .destra {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 0.9%;
+    gap: 1%;
+  }
+
+.backgroundCredenziali{
+  background-color: #ecbc93 !important;
+
+}
+
+
+.centroDue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%; 
+}
+
+.centroDiagonale{
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  gap: -80px;              
+  border-radius: 5%;
+}
+
+
+
+#img-footer{
+  max-width: 100%;
+  height: auto;
+}
+
+#img-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a#footer {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+
+.container-fluid-footer {
+  background-color: #727276;
+  margin: 0% !important;
+}
+
+h5#scritta-footer {
+  font-weight: bold;
+}
+
+h1#scritta-footer, p#scritta-footer {
+  text-align: center !important;
+}
+
+
+.navbar-brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+  color: black !important;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5); /* Colore bianco con trasparenza */
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div#NB {
+display: flex;
+
+}
+button#NB2 {
+  margin-left: 5px;
+}
+
+#scritta-footer {
+  color: white !important;
+
+}
+
+.form-control {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.nav-item {
+  margin: 15px;
+}
+
+

@@ -47,4 +47,8 @@ function toggleDescription(productId) { ////accetta l ingresso id del prodot
     } else {     //altrimenti
         description.style.display = "none"; // la nasconde 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dff49054c4f189586ae0133131d6b6876def88a2

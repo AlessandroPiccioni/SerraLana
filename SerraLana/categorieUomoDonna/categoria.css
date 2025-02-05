@@ -108,6 +108,8 @@ div#testoC{
     color: rgba(255, 255, 255, 0); 
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
 
 }
 
@@ -115,7 +117,8 @@ div#testoC{
     color: rgba(255, 255, 255, 0); 
     text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3);
     text-decoration: none;
-
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
 }
 
 .container-fluid#banner {
@@ -141,10 +144,13 @@ div#testoC{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> dff49054c4f189586ae0133131d6b6876def88a2
 #prodotti {
     display: flex;
     flex-wrap: nowrap;

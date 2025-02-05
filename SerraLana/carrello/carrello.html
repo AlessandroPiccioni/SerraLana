@@ -1,0 +1,315 @@
+<html>
+    <head>
+        <title>Carrello</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <style>
+            @import url(carrello.css);
+            
+        </style>
+    </head>
+    <body >
+
+        <!-- HEADER TRASPARENTE, ANCHE IL CAMPO DI RICERCA -->
+   
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <form class="form-inline">
+        <div id="NB">
+        <input class="form-control" type="search"> 
+        <button id="NB2" class="btn btn-btn btn-dark" type="submit">CERCA</button>
+      </div>
+      </form> 
+      <br>
+      <a class="navbar-brand" href="home.html">SERRALANA</a>
+          <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#">
+                  <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
+                </a></li> 
+                <li class="nav-item"><a href="#">
+                  <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+  </nav> 
+
+        <!-- #e9e6dd per il body-->
+        <div class="h-100 h-custom" style="background-color: #e9e6dd;">
+            <div class="container"  >
+              <div class="row d-flex justify-content-center align-items-center h-100" >
+                <div class="col" id="blocco-centrale">
+                  <div class="card" style="background-color: #e9e6dd;">
+                    <div class="card-body p-4">
+          
+                      <div class="row">
+          
+                        <div class="col-lg-7">
+                          <h5 class="mb-3"><a href="#!" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Continua a fare acquisti</a></h5>
+                          <hr>
+          
+                          <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div>
+                              <p class="mb-1">Carrello</p>
+                              <p class="mb-0">Hai 4 articoli nel carrello</p>
+                            </div>
+                            <div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ordina per:
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Prezzo</a></li>
+                                    <li><a class="dropdown-item" href="#">Dall' A alla Z</a></li>
+                                    <li><a class="dropdown-item" href="#">Dall' Z alla A</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+          
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row align-items-center">
+                                  <div>
+                                    <img
+                                      src="/SerraLana/img/66B70395-0CC6-4BBB-8643-A30CFEDCB16A.png"
+                                      class="img-fluid rounded-3" alt="Oggetto da shopping" style="width: 65px;">
+                                  </div>
+                                  <div class="ms-3">
+                                    <h5>Vestito 1</h5>
+                                    <p class="small mb-0">Descrizione 1</p>
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                  <div style="width: 50px;">
+                                    <h5 class="fw-normal mb-0">2</h5>
+                                  </div>
+                                  <div style="width: 80px;">
+                                    <h5 class="mb-0">900€</h5>
+                                  </div>
+                                  <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row align-items-center">
+                                  <div>
+                                    <img
+                                      src=" "
+                                      class="img-fluid rounded-3" alt="Oggetto da shopping" style="width: 65px;">
+                                  </div>
+                                  <div class="ms-3">
+                                    <h5>Vestito 2</h5>
+                                    <p class="small mb-0">Descrizione 2</p>
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                  <div style="width: 50px;">
+                                    <h5 class="fw-normal mb-0">2</h5>
+                                  </div>
+                                  <div style="width: 80px;">
+                                    <h5 class="mb-0">900€</h5>
+                                  </div>
+                                  <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          
+                          <div class="card mb-3">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row align-items-center">
+                                  <div>
+                                    <img
+                                      src=" "
+                                      class="img-fluid rounded-3" alt="Oggetto da shopping" style="width: 65px;">
+                                  </div>
+                                  <div class="ms-3">
+                                    <h5>Vestito 3</h5>
+                                    <p class="small mb-0">Descrizione 3</p>
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                  <div style="width: 50px;">
+                                    <h5 class="fw-normal mb-0">1</h5>
+                                  </div>
+                                  <div style="width: 80px;">
+                                    <h5 class="mb-0">1199€</h5>
+                                  </div>
+                                  <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          
+                          <div class="card mb-3 mb-lg-0">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row align-items-center">
+                                  <div>
+                                    <img
+                                      src=" "
+                                      class="img-fluid rounded-3" alt="Oggetto da shopping" style="width: 65px;">
+                                  </div>
+                                  <div class="ms-3">
+                                    <h5>Vestito 4</h5>
+                                    <p class="small mb-0">Descrizione 4</p>
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                  <div style="width: 50px;">
+                                    <h5 class="fw-normal mb-0">1</h5>
+                                  </div>
+                                  <div style="width: 80px;">
+                                    <h5 class="mb-0">1799€</h5>
+                                  </div>
+                                  <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          
+                        </div>
+                        <div class="col-lg-5">
+          
+                          <div class="card bg-primary text-white rounded-3">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="mb-0">Dettagli della carta</h5>
+                                <img src="/SerraLana/img/carrello.png"
+                                  class="img-fluid rounded-3" style="width: 45px;" alt="carrello">
+                              </div>
+                              <img src="/SerraLana/img/paymentCarrello.png"
+                              class="img-fluid rounded-3" style="width: 40%; height: 60%; margin-top: -4%;" alt="carte">
+          
+                              <form class="mt-4">
+                                <div data-mdb-input-init class="form-outline form-white mb-4">
+                                  <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                    placeholder="Nome del titolare della carta" />
+                                  <label class="form-label" for="typeName">Nome del titolare della carta</label>
+                                </div>
+          
+                                <div data-mdb-input-init class="form-outline form-white mb-4">
+                                  <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                    placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                                  <label class="form-label" for="typeText">Numero della carta</label>
+                                </div>
+          
+                                <div class="row mb-4">
+                                  <div class="col-md-6">
+                                    <div data-mdb-input-init class="form-outline form-white">
+                                      <input type="text" id="typeExp" class="form-control form-control-lg"
+                                        placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                                      <label class="form-label" for="typeExp">Scadenza</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div data-mdb-input-init class="form-outline form-white">
+                                      <input type="password" id="typeText" class="form-control form-control-lg"
+                                        placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                      <label class="form-label" for="typeText">Cvv</label>
+                                    </div>
+                                  </div>
+                                </div>
+          
+                              </form>
+          
+                              <hr class="my-4">
+          
+                              <div class="d-flex justify-content-between">
+                                <p class="mb-2">Subtotale</p>
+                                <p class="mb-2">4798.00€</p>
+                              </div>
+          
+                              <div class="d-flex justify-content-between">
+                                <p class="mb-2">Spedizione</p>
+                                <p class="mb-2">20.00€</p>
+                              </div>
+          
+                              <div class="d-flex justify-content-between mb-4">
+                                <p class="mb-2">Totale (incl. tasse)</p>
+                                <p class="mb-2">4818.00€</p>
+                              </div>
+          
+                              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-block btn-lg">
+                                <div class="d-flex justify-content-between">
+                                  <span>Procedi al pagamento <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                                </div>
+                              </button>
+          
+                            </div>
+                          </div>
+          
+                        </div>
+          
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+
+    <div class="container-fluid-footer">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-3">
+              <h5  id="scritta-footer">SUPPORTO</h5>
+              <div class="nav flex-column">
+                <a href="contatti.html" id="scritta-footer">Contatti</a>
+                <a href="condizioni.html" id="scritta-footer">Termini e condizioni</a>
+                <a href="FAQ.html" id="scritta-footer">FAQs</a>
+              </div>
+            </div> 
+
+        <div class="col-6">
+              <h5  id="scritta-footer">AZIENDA</h5>
+              <div class="nav flex-column">
+                <a id="scritta-footer">Sede legale: Via Roma 123, 00100, Roma, Italia </a>
+                <a id="scritta-footer">Partita IVA: IT12345678901 </a>   
+                <a id="scritta-footer">Ragione sociale: SERRALANA S.R.L </a>
+                <a id="scritta-footer">Codice Fiscale: 12345678901 </a>           
+              
+              </div>
+            </div>
+
+      
+          <div class="col-3">
+                <h5  id="scritta-footer">SEGUICI</h5>
+                <div class="img-social">
+                  <a href="#" id="footer">
+                    <img src="/SerraLana/img/fb.png" alt="fb" style="width:42px;height:42px;"  id="img-footer">
+                  </a>
+                  <a href="#" id="footer">
+                    <img src="/SerraLana/img/x.png" alt="x." style="width:42px;height:42px;"  id="img-footer">
+                  </a>
+                  <a href="#" id="footer">
+                    <img src="/SerraLana/img/instagram.png" alt="ig" style="width:42px;height:42px;"  id="img-footer">
+                  </a>
+                </div>
+                <br> <br>
+
+                <h5  id="scritta-footer"> METODI DI PAGAMENTO</h5>
+                <img src="/SerraLana/img/payment.png" alt="payment" style="width:300px;" id="img-footer">
+            </div>
+
+            <h1  id="scritta-footer">SERRALANA</h1>
+            <p  id="scritta-footer">© 2025 SERRALANA. Tutti i diritti riservati.</p>
+
+            </div>
+        </footer>
+      </div>
+    </body>
+</html>
