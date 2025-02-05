@@ -68,6 +68,15 @@ a#footer {
     outline: none;
 }
 
+#bottone {
+    position: relative;
+}
+
+#bottoneCarrello {
+    position: absolute;
+    right: 25%;
+} 
+
 
 .container-fluid-footer {
     background-color: #727276;

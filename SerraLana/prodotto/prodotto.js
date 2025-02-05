@@ -3,6 +3,7 @@ link.rel = 'stylesheet';
 link.href = "/SerraLana/prodotto/style.css"; // Sostituisci con il percorso del tuo file CSS
 document.head.appendChild(link);
 
+let idProdotto = 0;
 fetch('https://fakestoreapi.com/products/15')
             .then(res=>res.json())
             .then((data) => displayProduct(data))
@@ -13,6 +14,7 @@ fetch('https://fakestoreapi.com/products/15')
 
 const divProdotto = document.getElementById("prodotto");
 function displayProduct(product) {
+    idProdotto = product.id;
     const productCard2 =
             `
    <div class="col-md-6">
@@ -23,7 +25,6 @@ function displayProduct(product) {
             <p class="price">${product.price}</p>
             <p class="description">${product.description}</p>
 
-            <button class="btn btn-primary w-100">Aggiungi al Carrello</button>
         </div> 
                     
         `; 
@@ -31,3 +32,9 @@ function displayProduct(product) {
         divProdotto.innerHTML = `<div class="row"> ${productCard2} </div>`
 
 }
+const carrello = document.getElementById("bottoneCarrello");
+
+carrello.addEventListener("click", function() {
+    console.log(idProdotto);
+    sessionStorage.setItem("datoSalvato", idProdotto);
+});
