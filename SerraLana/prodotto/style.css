@@ -8,6 +8,11 @@ div#contenuto {
 .product-title {
     font-size: 2rem;
     font-weight: bold;
+    position: relative;
+}
+
+div.row {
+margin-top: 5%;
 }
 
 h2#preferiti {
@@ -15,7 +20,7 @@ h2#preferiti {
 }
 
 .img-fluid {
-    max-width: 100%;
+    width: 60%;
     height: auto;
 }
 
