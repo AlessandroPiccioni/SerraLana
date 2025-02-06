@@ -8,15 +8,19 @@ function nuovaCollezioneClicked() {
             const output = document.getElementById("prodotti"); // Contenitore dove visualizzare i prodotti
            
             filteredProducts.forEach(product => {  
-                output.innerHTML += `
-                    <div class="card">
-                        <img src="${product.image}" class="card-img-top" alt="${product.title}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.title}</h5>
-                            <button class="btn btn-dark" onclick="toggleDescription(${product.id})">Vedi Dettagli</button>
-                            <p class="card-text" id="desc-${product.id}">${product.description}</p> <br>
-                            <button class="btn btn-dark" id="bottoneCarrello" >Aggiungi al Carrello</button>
-
+                output.innerHTML += 
+                    `
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="card-img-top" src="${product.image}" alt="${product.title}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${product.title}</h5> <br>
+                                        <button class="btn btn-dark" onclick="toggleDescription(${product.id})">Vedi Dettagli</button>
+                                        <p class="card-text" id="desc-${product.id}">${product.description}</p> <br>
+                                        <button class="btn btn-dark" id="bottoneCarrello" >Aggiungi al Carrello</button>
+                                    </div>
+                                    </div>
                         </div>
                     </div>
                 `;
@@ -39,3 +43,12 @@ function toggleDescription(productId) {
         description.style.display = "none"; //la nasconde 
     }
 }
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
