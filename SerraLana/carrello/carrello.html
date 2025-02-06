@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 250px; /* Altezza fissa per uniformare le immagini */
+            object-fit: cover; /* Taglia le immagini per adattarle senza distorsioni */
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER TRASPARENTE, ANCHE IL CAMPO DI RICERCA -->
+   
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <form class="form-inline">
+        <div id="NB">
+        <input class="form-control" type="search"> 
+        <button id="NB2" class="btn btn-btn btn-dark" type="submit">CERCA</button>
+      </div>
+      </form> 
+      <br>
+      <a class="navbar-brand" href="/SerraLana/home/home.html">SERRALANA</a>
+          <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/SerraLana/recapFunzioni/recap.html">
+                  <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
+                </a></li> 
+                <li class="nav-item"><a href="#">
+                  <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+  </nav> 
+
+
+<!-- Wishlist -->
+<div class="container mt-5">
+    <h2 id="preferiti" class="mb-4">Il tuo carrello</h2>
+    
+    <div class="row" id="prodottiAggiunti">
+        <!-- <script>
+            const prodotti = [
+                { nome: "Maglione di Lana", prezzo: "€59,99", img: "https://static2.goldengoose.com/public/Style/ECOMM/GWP00952.P000665-90100-9.jpg" },
+                { nome: "Giacca di Pelle", prezzo: "€149,99", img: "https://cdn-images.farfetch-contents.com/18/28/41/55/18284155_39164823_1000.jpg" },
+                { nome: "Pantaloni Eleganti", prezzo: "€79,99", img: "https://cdn-images.farfetch-contents.com/19/15/50/49/19155049_42771292_1000.jpg" },
+                { nome: "Scarpe da Ginnastica", prezzo: "€129,99", img: "https://cdn-images.farfetch-contents.com/17/89/20/60/17892060_40094239_1000.jpg" },
+                { nome: "Cappotto Lungo", prezzo: "€199,99", img: "https://cdn-images.farfetch-contents.com/18/35/24/69/18352469_39363322_1000.jpg" },
+                { nome: "Felpa con Cappuccio", prezzo: "€89,99", img: "https://cdn-images.farfetch-contents.com/17/86/58/32/17865832_39259264_1000.jpg" },
+                { nome: "Zaino in Pelle", prezzo: "€109,99", img: "https://cdn-images.farfetch-contents.com/17/95/67/81/17956781_40030863_1000.jpg" },
+                { nome: "Jeans Slim Fit", prezzo: "€69,99", img: "https://cdn-images.farfetch-contents.com/17/78/61/36/17786136_39284458_1000.jpg" },
+                { nome: "T-Shirt Oversize", prezzo: "€39,99", img: "https://cdn-images.farfetch-contents.com/17/98/30/20/17983020_39462319_1000.jpg" },
+                { nome: "Occhiali da Sole", prezzo: "€89,99", img: "https://cdn-images.farfetch-contents.com/18/35/11/92/18351192_39142124_1000.jpg" }
+            ];
+
+            document.write(prodotti.map(prod => `
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="${prod.img}" class="card-img-top" alt="${prod.nome}">
+                        <div class="card-body">
+                            <h5 class="card-title">${prod.nome}</h5>
+                            <p class="card-text">${prod.prezzo}</p>
+                            <button class="btn btn-primary w-100 mb-2">Aggiungi al Carrello</button>
+                            <button class="btn btn-outline-danger w-100">Rimuovi</button>
+                        </div>
+                    </div>
+                </div>
+            `).join(''));
+        </script> -->
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="container-fluid-footer">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-3">
+          <h5  id="scritta-footer">SUPPORTO</h5>
+          <div class="nav flex-column">
+            <a href="contatti.html" id="scritta-footer">Contatti</a>
+            <a href="spedizioni.html"  id="scritta-footer">Spedizioni</a>
+            <a href="condizioni.html" id="scritta-footer">Termini e condizioni</a>
+            <a href="FAQ.html" id="scritta-footer">FAQs</a>
+          </div>
+        </div> 
+
+    <div class="col-6">
+          <h5  id="scritta-footer">AZIENDA</h5>
+          <div class="nav flex-column">
+          <a href="chisiamo.html"  id="scritta-footer">Chi siamo</a>
+          </div>
+        </div>
+
+  
+      <div class="col-3">
+            <h5  id="scritta-footer">SEGUICI</h5>
+            <div class="img-social">
+              <a href="#" id="footer">
+                <img src="/SerraLana/img/fb.png" alt="fb" style="width:42px;height:42px;"  id="img-footer">
+              </a>
+              <a href="#" id="footer">
+                <img src="/SerraLana/img/x.png" alt="x." style="width:42px;height:42px;"  id="img-footer">
+              </a>
+              <a href="#" id="footer">
+                <img src="/SerraLana/img/instagram.png" alt="ig" style="width:42px;height:42px;"  id="img-footer">
+              </a>
+            </div>
+            <br> <br>
+
+            <h5  id="scritta-footer"> METODI DI PAGAMENTO</h5>
+            <img src="/SerraLana/img/payment.png" alt="payment" style="width:300px;" id="img-footer">
+        </div>
+
+        <h1  id="scritta-footer">SERRALANA</h1>
+        <p  id="scritta-footer">© Copyright</p>
+
+        </div>
+    </footer>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
