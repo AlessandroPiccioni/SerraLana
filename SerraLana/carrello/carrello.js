@@ -18,12 +18,7 @@
                 `;
 
             });
-
-            if (filteredProducts.length === 0) {
-                output.innerHTML += "<p>Nessun prodotto trovato nella categoria Women's Clothing.</p>";
-            }
         })
-        .catch(error => console.error("Errore nel caricare i prodotti:", error));
 
         window.addEventListener('scroll', function() {
             const header = document.getElementById('navbar');

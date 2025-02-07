@@ -142,4 +142,53 @@ button#NB2 {
     margin: 15px;
 }
 
+#bottone1 {
+  
+    font-size: 25px; 
+    margin-left: 12%;
+   
+}
+
+#bottone2 {
+    
+   margin-left: 12%;
+    font-size: 25px; 
+    
+}
+
+.card{
+    margin-right:40px !important;
+    margin-bottom: 20px !important;
+    }
+
+#bottonePagamento {
+    margin-left: 71.5%;
+    font-size: 25px; 
+    font-weight: bold;
+    display: flex;
+
+}
+
+#bottonePagamento2 {
+    margin-left: 71.5%;
+    font-size: 20px; 
+    display: flex;
+
+}
+
+div#prodottiAggiunti {
+    display: flex;
+}
+
+#quantità {
+    font-weight: bold;
+
+}
+
+.card-body {
+    color: black;
+    font-size: 1.3rem;
+
+}
+
 

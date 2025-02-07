@@ -1,0 +1,166 @@
+
+body{
+    background-color: #e9e6dd !important;    
+}
+
+#testo {
+    color: white !important;
+    text-shadow: 
+        1px 1px 0 #000,   
+        -1px -1px 0 #000, 
+        1px -1px 0 #000,  
+        -1px 1px 0 #000;   
+}
+
+
+.centroOrrizontalmenteBasso {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+.centroVerticalmente {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.centroOrrizontalmente {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end;
+}
+
+
+
+  .sinistra {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    margin-left: 0.9%;
+  }
+
+.destra {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 0.9%;
+    gap: 1%;
+}
+
+
+.centroDue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%; 
+}
+
+.centroDiagonale{
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  gap: -80px;              
+  border-radius: 5%;
+}
+
+img.size{
+  width: 60%;
+  height: 60%;
+}
+
+#domande {
+    margin-top: 8% !important;
+    background-color: #Fffff0; 
+    padding-left: 3%; 
+    margin-bottom: 3%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* HEADER E FOOTER */
+
+#img-footer{
+    max-width: 100%;
+    height: auto;
+  }
+
+  #img-social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+a#footer {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+.container-fluid-footer {
+    background-color: #727276;
+    margin: 0% !important;
+}
+
+h5#scritta-footer {
+    font-weight: bold;
+}
+
+h1#scritta-footer, p#scritta-footer {
+    text-align: center !important;
+}
+
+
+.navbar-brand {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: black !important;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    transition: background-color 0.3s ease !important;
+    z-index: 1000;
+    padding: 5px;
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav.scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+div#NB {
+display: flex;
+
+}
+button#NB2 {
+    margin-left: 5px;
+}
+
+#scritta-footer {
+    color: white !important;
+
+}
+
+.form-control {
+    background-color: transparent !important;
+    border: 2px solid black !important;
+}
+
+.nav-item {
+    margin: 15px;
+}
+
+
