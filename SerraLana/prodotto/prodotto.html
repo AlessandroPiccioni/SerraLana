@@ -6,12 +6,15 @@
     <title>Serralana - Dettagli Prodotto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="prodotto.js" defer></script>  <!-- scripr src ... per richiamare il js -->
+
 </head>
 <body>
 
 <!-- HEADER TRASPARENTE, ANCHE IL CAMPO DI RICERCA -->
    
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
       <form class="form-inline">
         <div id="NB">
@@ -25,7 +28,7 @@
                 <li class="nav-item"><a href="/SerraLana/recapFunzioni/recap.html">
                   <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
                 </a></li> 
-                <li class="nav-item"><a href="#">
+                <li class="nav-item"><a href="/SerraLana/carrello/carrello.html">
                   <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
                 </a></li>
             </ul>
@@ -35,27 +38,11 @@
 
 <!-- Contenuto Prodotto -->
 <div  class="container mt-4">
-    <div id= "contenuto" class="row">
-        <!-- Immagine Prodotto -->
-        <div class="col-md-6 text-center">
-            <img src="https://static2.goldengoose.com/public/Style/ECOMM/GWP00952.P000665-90100-9.jpg" alt="Prodotto" class="img-fluid">
-        </div>
+    <div id="prodotto" class="row">
 
-        <!-- Dettagli Prodotto -->
-        <div class="col-md-6">
-            <h2 class="product-title">Maglione in Lana</h2>
-            <p class="text-muted">Codice prodotto: 1234</p>
-            <p class="price">€59,99</p>
-            <p class="description">Un maglione in lana pregiata, perfetto per le giornate fredde. Design elegante e comfort assoluto.</p>
-            
-            <div class="quantity mb-3">
-                <label for="quantity" class="form-label">Quantità:</label>
-                <input type="number" id="quantity" class="form-control" value="1" min="1">
-            </div>
+    </div id="bottone">  
+    <button class="btn btn-primary w-10" id="bottoneCarrello" >Aggiungi al Carrello</button>
 
-            <button class="btn btn-primary w-100">Aggiungi al Carrello</button>
-        </div>
-    </div>
 </div>
 
 <!-- Sezione Recensioni -->
@@ -78,9 +65,12 @@
       <div class="col-3">
         <h5  id="scritta-footer">SUPPORTO</h5>
         <div class="nav flex-column">
-          <a href="contatti.html" id="scritta-footer">Contatti</a>
-          <a href="condizioni.html" id="scritta-footer">Termini e condizioni</a>
-          <a href="FAQ.html" id="scritta-footer">FAQs</a>
+          <a href="/SerraLana/assistenza/assistenza2.html" id="scritta-footer">Contatti</a>
+          <script>
+            document.getElementById("downloadLink").click();
+          </script>
+          <a class="downloadLink text-white" target="_blank" id="downloadLink" href="/Termini.pdf">Termini e condizioni</a>
+          <a href="/SerraLana/assistenza/assistenza2.html" id="scritta-footer">FAQs</a>
         </div>
       </div> 
 

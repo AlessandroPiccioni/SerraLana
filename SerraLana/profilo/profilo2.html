@@ -12,12 +12,15 @@
         @import url(profilo.css);
         
     </style>
+
+<script src="/SerraLana/carrello/carrello.js" defer></script>  <!-- scripr src ... per richiamare il js -->
+
 </head>
 <body>
 
     <!-- HEADER TRASPARENTE, ANCHE IL CAMPO DI RICERCA -->
    
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
       <form class="form-inline">
         <div id="NB">
@@ -31,7 +34,7 @@
                 <li class="nav-item"><a href="/SerraLana/profilo/profilo2.html">
                   <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
                 </a></li> 
-                <li class="nav-item"><a href="#">
+                <li class="nav-item"><a href="/SerraLana/carrello/carrello.html">
                   <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
                 </a></li>
             </ul>
@@ -161,9 +164,12 @@
         <div class="col-3">
           <h5  id="scritta-footer">SUPPORTO</h5>
           <div class="nav flex-column">
-            <a href="contatti.html" id="scritta-footer">Contatti</a>
-            <a href="condizioni.html" id="scritta-footer">Termini e condizioni</a>
-            <a href="FAQ.html" id="scritta-footer">FAQs</a>
+            <a href="/SerraLana/assistenza/assistenza2.html" id="scritta-footer">Contatti</a>
+            <script>
+              document.getElementById("downloadLink").click();
+            </script>
+            <a class="downloadLink text-white" target="_blank" id="downloadLink" href="/Termini.pdf">Termini e condizioni</a>
+            <a href="/SerraLana/assistenza/assistenza2.html" id="scritta-footer">FAQs</a>
           </div>
         </div> 
 
