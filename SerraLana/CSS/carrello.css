@@ -11,7 +11,7 @@ div#contenuto {
     position: relative;
 }
 
-div.row {
+div#prodottiAggiunti {
 margin-top: 5%;
 }
 
@@ -142,20 +142,6 @@ button#NB2 {
     margin: 15px;
 }
 
-#bottone1 {
-  
-    font-size: 25px; 
-    margin-left: 12%;
-   
-}
-
-#bottone2 {
-    
-   margin-left: 12%;
-    font-size: 25px; 
-    
-}
-
 .card{
     margin-right:40px !important;
     margin-bottom: 20px !important;
@@ -185,10 +171,26 @@ div#prodottiAggiunti {
 
 }
 
+#dettagliPagamento {
+    background-color: rgba(255, 255, 255, 0.812) !important; /* Colore bianco con trasparenza */
+    transform: scale(0.85);
+}
+
+#boxDiv {
+    margin-left: 50px;
+    margin-top: 4%;
+}
+
+#sfondo {
+    background-image: url(/SerraLana/img/recap.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 .card-body {
     color: black;
     font-size: 1.3rem;
 
 }
-
-

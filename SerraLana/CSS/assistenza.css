@@ -112,42 +112,41 @@ h1#scritta-footer, p#scritta-footer {
     text-align: center !important;
 }
 
-
 .navbar-brand {
-    position: absolute !important;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 200%;
+    font-size: 200% !important;
     font-weight: bold;
     color: black !important;
 }
 
-.navbar {
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    transition: background-color 0.3s ease !important;
+#navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
     z-index: 1000;
     padding: 5px;
-    position: fixed !important;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav.scrolled {
-    background-color: white !important;
+#navbar.scrolled {
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 div#NB {
-display: flex;
-
-}
-button#NB2 {
-    margin-left: 5px;
-}
+    display: flex;
+    
+    }
+    button#NB2 {
+        margin-left: 5px;
+    }
 
 #scritta-footer {
     color: white !important;
@@ -155,8 +154,8 @@ button#NB2 {
 }
 
 .form-control {
-    background-color: transparent !important;
-    border: 2px solid black !important;
+    background-color: transparent;
+    border: 2px solid black;
 }
 
 .nav-item {
