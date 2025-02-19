@@ -9,38 +9,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
-        @import url(profilo.css);
+        @import url(/SerraLana/CSS/profilo.css);
         
     </style>
 
-<script src="/SerraLana/carrello/carrello.js" defer></script>  <!-- scripr src ... per richiamare il js -->
+<script src="/SerraLana/JS/logout.js" defer></script>  <!-- scripr src ... per richiamare il js -->
 
 </head>
 <body>
 
     <!-- HEADER TRASPARENTE, ANCHE IL CAMPO DI RICERCA -->
    
-<nav class="navbar navbar-expand-lg" id="navbar">
-    <div class="container">
-      <form class="form-inline">
-        <div id="NB">
-        <input class="form-control" type="search"> 
-        <button id="NB2" class="btn btn-btn btn-dark" type="submit">CERCA</button>
-      </div>
-      </form> 
-      <br>
-      <a class="navbar-brand" href="/SerraLana/home/home.html">SERRALANA</a>
-          <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="/SerraLana/profilo/profilo2.html">
-                  <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
-                </a></li> 
-                <li class="nav-item"><a href="/SerraLana/carrello/carrello.html">
-                  <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
-                </a></li>
-            </ul>
-        </div>
-    </div>
-  </nav> 
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/SerraLana/HTML/home.html">SERRALANA</a>
+            <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a href="/SerraLana/HTML/recap.html">
+                    <img src="/SerraLana/img/icon.png" alt="fb" style="width:42px;height:42px;">
+                  </a></li> 
+                  <li class="nav-item"><a href="/SerraLana/HTML/carrello.html">
+                    <img src="/SerraLana/img/carrello.png" alt="fb" style="width:42px;height:42px;">
+                  </a></li>
+              </ul>
+          </div>
+    </nav> 
  
 
 
@@ -74,7 +66,7 @@
                             <div class="centroVerticalmente" style="margin-right: 1%;">
                                 <i class="fas fa-envelope" style="font-size: 18px;"></i>
                             </div>
-                          <input type="email" class="form-control" id="email" value="mario.rossi@email.com">
+                          <input type="email" class="form-control" id="email">
                         </div>
                       </div>
                       <div class="mb-3 position-relative">
@@ -83,7 +75,7 @@
                             <div class="centroVerticalmente" style="margin-right: 1%;">
                                 <i class="fas fa-user" style="font-size: 18px;"></i>
                             </div>
-                          <input type="text" class="form-control" id="username" value="mariorossi">
+                          <input type="text" class="form-control" id="username">
                         </div>
                       </div>
                       <div class="mb-3 position-relative">
@@ -92,7 +84,7 @@
                             <div class="centroVerticalmente" style="margin-right: 1%;">
                                 <i class="fas fa-lock" style="font-size: 18px;"></i>
                             </div>
-                          <input type="password" class="form-control" id="password" value="********">
+                          <input type="password" class="form-control" id="password">
                           <i class="fas fa-eye position-absolute" id="togglePassword" style="right: 10px; top: 35px; cursor: pointer;"></i>
                         </div>
                       </div>
@@ -102,15 +94,13 @@
                       <div class="mb-3 position-relative">
                         <label for="nome" class="form-label">Nome</label>
                         <div class="input-group">
-                          <div class="input-group-prepend">
-                          </div>
-                          <input type="text" class="form-control" id="nome" value="Mario">
+                          <input type="text" class="form-control" id="nome">
                         </div>
                       </div>
                       <div class="mb-3 position-relative">
                         <label for="cognome" class="form-label">Cognome</label>
                         <div class="input-group">
-                          <input type="text" class="form-control" id="cognome" value="Rossi">
+                          <input type="text" class="form-control" id="cognome">
                         </div>
                       </div>
                       <div class="mb-3 position-relative">
@@ -119,7 +109,7 @@
                             <div class="centroVerticalmente" style="margin-right: 1%;">
                                 <i class="fas fa-home" style="font-size: 18px;"></i>
                             </div>
-                          <input type="text" class="form-control" id="indirizzo" value="Via Roma 10, Milano">
+                          <input type="text" class="form-control" id="indirizzo">
                         </div>
                       </div>
                       <div class="mb-3 position-relative">
@@ -128,25 +118,26 @@
                           <div class="centroVerticalmente" style="margin-right: 1%;">
                             <i class="fas fa-calendar-alt" style="font-size: 18px;"></i>
                           </div>
-                          <input type="date" class="form-control" id="dataNascita" value="2025-01-25">
+                          <input type="date" class="form-control" id="dataNascita">
                         </div>
                       </div>
                     </form>                
                     <h5 class="card-title mt-4">Dati di Pagamento</h5>
                     <form>
                       <div class="mb-3 position-relative">
-                        <label for="metodoPagamento" class="form-label">Metodo di pagamento</label>
+                        <label for="cartaCredito" class="form-label">Metodo di pagamento</label>
                         <div class="input-group">
                             <div class="centroVerticalmente" style="margin-right: 1%;">
                                 <i class="fas fa-credit-card" style="font-size: 18px;"></i>
                             </div>
-                          <input type="text" class="form-control" id="metodoPagamento" value="Carta di credito">
+                          <input type="text" class="form-control" id="cartaCredito">
                         </div>
                       </div>
                     </form>
                     <div class="destra">
-                      <button type="button" class="btn btn-dark">SALVA</button>
-                      <button type="button" class="btn btn-dark">ELIMINA ACCOUNT</button>
+                      <button id="deleteAccountButton" type="button" class="btn btn-danger">ELIMINA </button>
+                      <button id="updateButton" type="button" class="btn btn-success">SALVA</button>
+                      <button id="logoutButton" type="button" class="btn btn-dark" >ESCI</button>
                     </div>
                   </div>
                 </div>
@@ -164,23 +155,22 @@
         <div class="col-3">
           <h5  id="scritta-footer">SUPPORTO</h5>
           <div class="nav flex-column">
-            <a href="/SerraLana/assistenza/assistenza2.html" id="scritta-footer">Contatti</a>
+            <a href="/SerraLana/HTML/assistenza2.html" id="scritta-footer">Contatti</a>
             <script>
               document.getElementById("downloadLink").click();
             </script>
-            <a class="downloadLink text-white" target="_blank" id="downloadLink" href="/Termini.pdf">Termini e condizioni</a>
-            <a href="/SerraLana/assistenza/assistenza2.html" id="scritta-footer">FAQs</a>
+            <a class="downloadLink text-white" target="_blank" id="downloadLink" href="/Termini.pdf">Termini e condizioni</a>    
+            <a href="/SerraLana/HTML/assistenza2.html" id="scritta-footer">FAQs</a>
           </div>
         </div> 
 
-    <div class="col-6">
+        <div class="col-6">
           <h5  id="scritta-footer">AZIENDA</h5>
           <div class="nav flex-column">
             <a id="scritta-footer">Sede legale: Via Roma 123, 00100, Roma, Italia </a>
             <a id="scritta-footer">Partita IVA: IT12345678901 </a>   
             <a id="scritta-footer">Ragione sociale: SERRALANA S.R.L </a>
             <a id="scritta-footer">Codice Fiscale: 12345678901 </a>           
-          
           </div>
         </div>
 
@@ -205,7 +195,7 @@
         </div>
 
         <h1  id="scritta-footer">SERRALANA</h1>
-        <p  id="scritta-footer">© 2025 SERRALANA. Tutti i diritti riservati.</p>
+        <p  id="scritta-footer">© Copyright</p>
 
         </div>
     </footer>
