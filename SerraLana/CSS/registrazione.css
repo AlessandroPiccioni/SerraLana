@@ -20,6 +20,8 @@ a#footer {
     margin: 0% !important;
 }
 
+
+
 h5#scritta-footer {
     font-weight: bold;
 }
@@ -27,7 +29,6 @@ h5#scritta-footer {
 h1#scritta-footer, p#scritta-footer {
     text-align: center !important;
 }
-
 
 .navbar-brand {
     position: absolute;
@@ -58,12 +59,12 @@ nav.scrolled {
 }
 
 div#NB {
-display: flex;
-
-}
-button#NB2 {
-    margin-left: 5px;
-}
+    display: flex;
+    
+    }
+    button#NB2 {
+        margin-left: 5px;
+    }
 
 #scritta-footer {
     color: white !important;
@@ -72,7 +73,7 @@ button#NB2 {
 
 .form-control {
     background-color: transparent;
-    border: 2px solid black !important;
+    border: 2px solid black;
 }
 
 .nav-item {
@@ -80,7 +81,12 @@ button#NB2 {
 }
 
 
-.row {
+
+
+
+
+
+#formRighe {
     margin: 5%;
 }
 

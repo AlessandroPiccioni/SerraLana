@@ -3,7 +3,8 @@ body {
 }
 
 div#contenuto {
-    padding-top: 80px;}
+    padding-top: 80px;
+}
 
 .product-title {
     font-size: 2rem;
@@ -11,9 +12,6 @@ div#contenuto {
     position: relative;
 }
 
-div.row {
-margin-top: 5%;
-}
 
 h2#preferiti {
     padding-top: 50px
@@ -25,7 +23,7 @@ h2#preferiti {
 }
 
 .price {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #28a745;
 }
@@ -46,11 +44,7 @@ h2#preferiti {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card-img-top {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
+
 
 #img-footer{
     max-width: 100%;
@@ -68,13 +62,10 @@ a#footer {
     outline: none;
 }
 
-#bottone {
-    position: relative;
-}
+
 
 #bottoneCarrello {
-    position: absolute;
-    right: 25%;
+    width: 150px;
 } 
 
 
@@ -142,28 +133,27 @@ button#NB2 {
     margin: 15px;
 }
 
+
+
+
 .card{
     margin-right:40px !important;
     margin-bottom: 20px !important;
     }
 
-#bottonePagamento {
-    margin-left: 71.5%;
-    font-size: 25px; 
-    font-weight: bold;
+
+div#productDetail {
     display: flex;
+    margin-top: 5%;
 
 }
 
-#bottonePagamento2 {
-    margin-left: 71.5%;
-    font-size: 20px; 
-    display: flex;
-
+#imgProdotto {
+    transform: scale(0.8);
 }
 
-div#prodottiAggiunti {
-    display: flex;
+#dettagliAggiuntivi {
+    margin-top: 30%;
 }
 
 #quantità {
@@ -171,26 +161,37 @@ div#prodottiAggiunti {
 
 }
 
-#dettagliPagamento {
-    background-color: rgba(255, 255, 255, 0.812) !important; /* Colore bianco con trasparenza */
-    transform: scale(0.85);
-}
-
-#boxDiv {
-    margin-left: 50px;
-    margin-top: 4%;
-}
-
-#sfondo {
-    background-image: url(/SerraLana/img/recap.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
 .card-body {
     color: black;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
 
 }
+
+div#rimuovi {
+    display: flex !important;
+    align-items: center !important;
+}
+
+#bottoneAggiungi {
+    margin-bottom: 5%;
+    width: 250rem;
+}
+
+img#rimuoviCarrello {
+    height: 50%;
+    width: 50%;
+    margin-left: 40%;
+    margin-bottom: 25%;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+
+

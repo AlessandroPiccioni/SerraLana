@@ -9,19 +9,19 @@ function nuovaCollezioneClicked() {
             filteredProducts.forEach(product => {  
                 output.innerHTML += 
                 `
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+                    <a href="prodotto.html?id=${product.id}" class="card-link">
+                        <div class="card" style="width: 13rem;">                        
                                 <img class="card-img-top" src="${product.image}" alt="${product.title}">
                                     <div class="card-body">
-                                        <h5 class="card-title">${product.title}</h5> <br>
-                                        <button class="btn btn-dark" onclick="toggleDescription(${product.id})">Vedi Dettagli</button>
-                                        <p class="card-text" id="desc-${product.id}">${product.description}</p> <br>
-                                        <button class="btn btn-dark" id="bottoneCarrello" >Aggiungi al Carrello</button>
+                                        <h5 class="card-title">${product.title}</h5> 
                                     </div>
-                                    </div>
+                                        <div id="compra">
+                                        <button class="btn btn-dark" id="vediDettagli" >Vedi Dettagli</button>
+                                        <a href="#">
+                                        <img class="card-img-top" src="/SerraLana/img/carrelloCategoria.png" id="compraCarrello">
+                                        </a>
+                                        </div>
                         </div>
-                    </div>
                 `;
 
             });
@@ -34,15 +34,9 @@ function nuovaCollezioneClicked() {
 }
 
 
-function toggleDescription(productId) { 
-    const description = document.getElementById(`desc-${productId}`);
-    if (description.style.display === "none" || description.style.display === "") {
-        description.style.display = "block";
-    } else {     
-        description.style.display = "none"; 
-    }
-}
 
+
+//Navbar
 window.addEventListener('scroll', function() {
     const header = document.getElementById('navbar');
     if (window.scrollY > 50) {
@@ -51,3 +45,5 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+
